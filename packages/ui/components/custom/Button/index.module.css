@@ -1,0 +1,16 @@
+.button {
+    background-color: transparent;
+    border: solid 0.25rem rgb(86, 180, 170);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: fit-content;
+    font-weight: bold;
+}
+
+@media (max-width: 425px) {
+    .button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  

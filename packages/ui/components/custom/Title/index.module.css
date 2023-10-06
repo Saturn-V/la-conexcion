@@ -1,0 +1,15 @@
+.title {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.title span {
+    color: rgb(86, 180, 170);
+}
+
+@media (max-width: 375px) {
+    .title {
+        font-size: 2.5rem;
+    }
+  }
+  
