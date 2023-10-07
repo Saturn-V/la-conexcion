@@ -1,10 +1,7 @@
 import { Inter } from 'next/font/google'
-
 import Navigation from 'ui/components/custom/Navigation'
-
-// import './globals.css'
-import 'ui/globals.css'
 import styles from './layout.module.css'
+import '@ui/globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -31,7 +28,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           > */}
-        <Navigation logo={"LEFT"} />
+        <Navigation logo="LEFT" />
 
         <div className={styles.wrapper}>
           <main className={styles.main}>

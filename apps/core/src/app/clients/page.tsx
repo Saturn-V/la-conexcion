@@ -1,12 +1,12 @@
 "use client"
 
 import Image from 'next/image'
-import styles from './page.module.css'
 import Card from '@ui/components/custom/Card'
 import classNames from 'classnames'
 import { Tabs, TabsList, TabsTrigger } from '@ui/components/ui/tabs'
 import { TabsContent } from '@radix-ui/react-tabs'
 import { Badge } from '@ui/components/ui/badge'
+import styles from './page.module.css'
 
 export default function About() {
     return <div className={styles.page}>

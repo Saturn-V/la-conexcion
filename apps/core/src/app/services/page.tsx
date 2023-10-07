@@ -1,15 +1,15 @@
 "use client"
 
 // import JotformEmbed from 'react-jotform-embed'
+import classNames from 'classnames'
+import { useState } from 'react'
+import Link from 'next/link'
 import JotformEmbed from '@ui/components/custom/Jotform'
-import styles from './page.module.css'
 import { Tabs, TabsList, TabsTrigger } from '@ui/components/ui/tabs'
 import { TabsContent } from '@radix-ui/react-tabs'
 import { Badge } from '@ui/components/ui/badge'
-import classNames from 'classnames'
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from '@ui/components/ui/select'
-import { useState } from 'react'
-import Link from 'next/link'
+import styles from './page.module.css'
 
 export default function About() {
     const [selected, setSelected] = useState("web")
@@ -76,7 +76,7 @@ interface PlanProps {
     pricing: string
     discount?: string
     aside: string
-    offerings: { [offering: string]: string[] | null | undefined }
+    offerings: Record<string, string[] | null | undefined>
 }
 function Plan({ title, type, pricing, discount, aside, offerings }: PlanProps) {
     const offeringsElements = Object.keys(offerings).flatMap(offering => {
@@ -95,7 +95,7 @@ function Plan({ title, type, pricing, discount, aside, offerings }: PlanProps) {
             <p className={classNames(styles.title, styles.small)}>{title}</p>
             <p><span className={classNames(styles.title, styles.medium)}>{pricing}</span> / {type}</p>
             <div>
-                {discount!! && <Badge variant="outline" className={styles.badge}>{discount} discount</Badge>}
+                {Boolean(discount) && <Badge variant="outline" className={styles.badge}>{discount} discount</Badge>}
             </div>
             <p>{aside}</p>
         </div>
@@ -108,8 +108,8 @@ function Plan({ title, type, pricing, discount, aside, offerings }: PlanProps) {
 
 function Check() {
     return <svg data-testid="geist-icon" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24" style={{ display: "inline-block", color: "black", width: "20px", height: "20px" }}>
-        <path d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2Z" fill="rgb(86, 180, 170)" stroke="rgb(86, 180, 170)"></path>
-        <path d="M8 11.8571L10.5 14.3572L15.8572 9" fill="none" stroke="var(--geist-stroke)"></path>
+        <path d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2Z" fill="rgb(86, 180, 170)" stroke="rgb(86, 180, 170)"/>
+        <path d="M8 11.8571L10.5 14.3572L15.8572 9" fill="none" stroke="var(--geist-stroke)"/>
     </svg>
 }
 

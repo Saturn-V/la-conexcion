@@ -1,7 +1,7 @@
-import styles from './page.module.css'
 import Button from 'ui/components/custom/Button'
 import { Badge } from 'ui/components/ui/badge'
 import Title from 'ui/components/custom/Title'
+import styles from './page.module.css'
 
 export default function Home() {
   return (

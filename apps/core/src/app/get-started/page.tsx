@@ -1,14 +1,15 @@
 "use client"
 
 import Image from 'next/image'
-import styles from './page.module.css'
-import Script from 'next/script'
 // import JotformEmbed from 'react-jotform-embed'
 import JotformEmbed from '@ui/components/custom/Jotform'
+import styles from './page.module.css'
+
+const title = "Let's get started!"
 
 export default function About() {
     return <div className={styles.page}>
-        <p className={styles.title}>{"Let's get started!"}</p>
+        <p className={styles.title}>{title}</p>
         <div className={styles.content}>
             <div className={styles.asset_wrapper}>
                 <Image

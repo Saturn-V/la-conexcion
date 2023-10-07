@@ -1,7 +1,6 @@
-import Image from 'next/image'
-import styles from './page.module.css'
-import Button from '@ui/components/custom/Button'
 import classNames from 'classnames'
+import Button from '@ui/components/custom/Button'
+import styles from './page.module.css'
 
 export default function About() {
     return <div className={styles.page}>
@@ -27,7 +26,7 @@ interface StepsProps {
 function Step({step, title, description}: StepsProps) {
     return <div>
         <p className={classNames(styles.title, styles.medium)}><span>{step}</span> {title}</p>
-        <div className={styles.divider}></div>
+        <div className={styles.divider}/>
         <p>{description}</p>
     </div>
 }

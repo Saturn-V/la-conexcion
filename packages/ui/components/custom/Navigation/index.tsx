@@ -45,7 +45,7 @@ export default function Navigation({logo}: NavigationProps) {
     <>
       <nav className={styles.navigation}>
         <div className={styles.controls}>
-            {logo!! && logo === LogoPosition.Left && <Link href={"/"} onClick={() => setActiveTab(Tab.Home)} className={classNames(styles.item)}>
+            {!!logo && logo === LogoPosition.Left && <Link href={"/"} onClick={() => setActiveTab(Tab.Home)} className={classNames(styles.item)}>
               <Image
                 className={styles.logo}
                 src="/images/customer/logo.png"

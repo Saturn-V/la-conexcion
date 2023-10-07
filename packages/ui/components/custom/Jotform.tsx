@@ -36,7 +36,7 @@ export default function JotFormEmbed({
       const handleMessages = (content: any) => {
         if (!content) { return; }
         // Check if submission is completed.
-        if (onSubmit!! && typeof content.data === 'object' && content.data.action === 'submission-completed') {
+        if (!!onSubmit && typeof content.data === 'object' && content.data.action === 'submission-completed') {
           onSubmit();
           return;
         }
@@ -51,7 +51,7 @@ export default function JotFormEmbed({
   
         switch (true) {
           case method === 'scrollIntoView' && autoFocus:
-            if (iframeRef.current!! && typeof iframeRef.current.scrollIntoView === 'function') {
+            if (!!iframeRef.current && typeof iframeRef.current.scrollIntoView === 'function') {
               iframeRef.current.scrollIntoView();
             }
             break;
@@ -63,7 +63,7 @@ export default function JotFormEmbed({
             break;
           case method === 'reloadPage':
             try {
-                iframeRef.current!! && iframeRef.current.contentWindow!! && iframeRef.current.contentWindow.location.reload();
+                !!iframeRef.current && !!iframeRef.current.contentWindow && iframeRef.current.contentWindow.location.reload();
             } catch (e) {
               console.log('failed to reload', e);
             }
