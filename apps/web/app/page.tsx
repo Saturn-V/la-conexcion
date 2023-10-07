@@ -57,6 +57,7 @@ export default function Page(): JSX.Element {
           examples/basic&nbsp;
           <code className={styles.code}>web</code>
         </p>
+        <p>Testing no deploy to core</p>
         <div>
           <a
             href="https://vercel.com?utm_source=create-turbo&utm_medium=basic&utm_campaign=create-turbo"
