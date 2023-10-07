@@ -16,7 +16,6 @@ export default function Home() {
       </div>
       <div className={styles.actions}>
         <Button label='Get Started' href="/get-started" />
-        {/* <Button label='SE HABLA ESPAÑOL!' /> */}
       </div>
     </div>
   )
