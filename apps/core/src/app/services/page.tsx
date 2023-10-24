@@ -56,13 +56,13 @@ function WebServicesPage() {
 
         <TabsContent value="monthly">
             <div className={styles.plans}>
-                <Plan title="Startup" type="month" pricing="$15" aside='One-time website design & development fee of $150' offerings={{"3 Page Website": ["Landing Page", "Product / Service Page", "Contact Page",], "3 Stock Photos (max)": null, "1 Update per month": null, "Unlimited personal assets": null, "Free subdomain provided": null }} />
+                <Plan title="Startup" type="month" pricing="$15" aside='One-time website design & development fee of $150' offerings={{"2 Page Website": ["Landing Page", "Product / Service Page"], "3 Stock Photos (max)": null, "1 Update per month": null, "Unlimited personal assets": null, "Free subdomain provided": null }} />
                 <Plan title="Premium" type="month" pricing="$50" aside='Everything in Startup, plus waived one-time fees and more' offerings={{"4 Page Interactive Website": ["Landing Page", "Product / Service Page", "About / Why Us Page", "Contact Page",], "Site Design": null, "Personal Subdomain": null, "Unlimited Updates": null, "Site Development": null, "Interactive Info Corners": null, "Unlimited stock assets": null, "Unlimited personal assets": null }} />
             </div>
         </TabsContent>
         <TabsContent value="annually">
             <div className={styles.plans}>
-                <Plan title="Startup" type="year" pricing="$120" discount='17%' aside='One-time website design & development fee of $150' offerings={{"3 Page Website": ["Landing Page", "Product / Service Page", "Contact Page",], "3 Stock Photos (max)": null, "1 Update per month": null, "Unlimited personal assets": null, "Free subdomain provided": null }} />
+                <Plan title="Startup" type="year" pricing="$120" discount='17%' aside='One-time website design & development fee of $150' offerings={{"2 Page Website": ["Landing Page", "Product / Service Page"], "3 Stock Photos (max)": null, "1 Update per month": null, "Unlimited personal assets": null, "Free subdomain provided": null }} />
                 <Plan title="Premium" type="year" pricing="$500" discount='17%' aside='Everything in Startup, plus waived one-time fees and more' offerings={{"4 Page Interactive Website": ["Landing Page", "Product / Service Page", "About / Why Us Page", "Contact Page",], "Site Design": null, "Personal Subdomain": null, "Unlimited Updates": null, "Site Development": null, "Interactive Info Corners": null, "Unlimited stcok assets": null, "Unlimited personal assets": null }} />
             </div>
         </TabsContent>

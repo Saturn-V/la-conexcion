@@ -5,6 +5,8 @@ import '@ui/globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
+const TABS = ['Home', 'About', 'Process', 'Clients', 'Services', 'Get Started']
+
 export const metadata = {
   title: 'La Conexcion',
   description: 'Home',
@@ -22,13 +24,13 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark" style={{ colorScheme: "dark" }}>
       <body className={`${inter.className}`}>
-      {/* <ThemeProvider
+        {/* <ThemeProvider
             attribute="class"
             defaultTheme="dark"
             enableSystem
             disableTransitionOnChange
           > */}
-        <Navigation logo="LEFT" />
+        <Navigation tabs={TABS} logo="LEFT" />
 
         <div className={styles.wrapper}>
           <main className={styles.main}>
