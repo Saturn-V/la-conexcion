@@ -1,0 +1,73 @@
+.page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 0 1.5rem;
+  padding-top: 4.5rem;
+
+  background: url('/images/customer/contact/bg.png');
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 0.75fr 1fr 0.75fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.connect {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+}
+
+.hours {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+
+.asset {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.title.small {
+  font-size: 1.5rem;
+}
+
+.title.medium {
+  font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding-top: 2.5rem;
+  }
+  
+  .content {
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
+    /* justify-items: center; */
+    
+  }
+}

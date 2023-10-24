@@ -1,0 +1,60 @@
+.page {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  background: url('/images/customer/why-us/bg.png');
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  margin: 0 5rem;
+  margin-top: 7.5rem;
+  gap: 5rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.title span {
+  color: rgb(208, 47, 34);
+}
+
+@media (max-width: 874px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+
+  .content {
+    text-align: center;
+    align-items: center;
+    margin-top: 5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .content {
+    margin: 0 1.5rem;
+    margin-top: 5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .title {
+    font-size: 3rem;
+  }
+}
