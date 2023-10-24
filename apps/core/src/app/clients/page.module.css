@@ -6,6 +6,11 @@
     margin: 0 5rem;
 }
 
+.page a {
+    text-decoration: underline;
+    color: rgb(86, 180, 170);
+}
+
 .title {
     font-size: 3.5rem;
     font-weight: bold;
